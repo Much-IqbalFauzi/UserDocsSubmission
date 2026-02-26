@@ -1,5 +1,7 @@
+import { User } from '../types/user';
+
 export type RootStackParamList = {
   Login: {};
   Home: {};
-  Detail: { productId: number };
+  Detail: { paramItem: User };
 };
