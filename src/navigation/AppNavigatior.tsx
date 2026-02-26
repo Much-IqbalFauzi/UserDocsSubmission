@@ -19,7 +19,11 @@ export default function AppNavigator() {
           <Stack.Screen name="Detail" component={DetailScreen} />
         </>
       ) : (
-        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="Login"
+          component={LoginScreen}
+        />
       )}
     </Stack.Navigator>
   );
