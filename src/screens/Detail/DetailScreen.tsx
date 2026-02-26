@@ -12,7 +12,7 @@ export default function DetailScreen({ route, navigation }: any) {
   });
 
   return (
-    <View style={{ padding: 16 }}>
+    <View style={{ padding: 16, flex: 1 }}>
       <Text style={styles.userInfo}>{user.name}</Text>
       <Text style={styles.userInfo}>{user.email}</Text>
       <Text style={styles.userInfo}>{user.phone}</Text>
