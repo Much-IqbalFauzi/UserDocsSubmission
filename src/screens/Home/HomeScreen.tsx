@@ -30,7 +30,7 @@ export default function HomeScreen({ navigation }: any) {
       renderItem={({ item }) => (
         <TextCard
           user={item}
-          onPress={() => navigation.navigate('Detail', { userId: item })}
+          onPress={() => navigation.navigate('Detail', { paramItem: item })}
         />
       )}
     />
