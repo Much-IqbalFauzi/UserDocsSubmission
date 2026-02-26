@@ -3,7 +3,7 @@ import { AuthToken } from '../types/auth';
 export const generateToken = (email: string): string => {
   const token: AuthToken = {
     email,
-    expiry: Date.now() + 1 * 60 * 1000,
+    expiry: Date.now() + 60 * 60 * 1000,
   };
 
   return JSON.stringify(token);

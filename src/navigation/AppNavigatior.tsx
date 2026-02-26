@@ -15,7 +15,11 @@ export default function AppNavigator() {
     <Stack.Navigator>
       {isAuthenticated ? (
         <>
-          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="Home"
+            component={HomeScreen}
+          />
           <Stack.Screen name="Detail" component={DetailScreen} />
         </>
       ) : (
